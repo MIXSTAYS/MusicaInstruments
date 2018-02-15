@@ -2,25 +2,24 @@ package musicalInstruments;
 
 import melody.Melody;
 
-abstract class PercussionInstruments {
-    private String material;
+abstract class WindInstruments implements MusicalInstruments {
+    private int tone;
     private String name;
 
-    public PercussionInstruments(String name, String material){
+    public WindInstruments(String name){
         this.name = name;
-        this.material = material;
     }
 
     public abstract void information(String name, Melody melody);
 
     public abstract void description();
 
-    public String getMaterial() {
-        return material;
+    public int getTone() {
+        return tone;
     }
 
-    public void setMaterial(String material) {
-        this.material = material;
+    public void setTone(int tone) {
+        this.tone = tone;
     }
 
     public String getName() {
@@ -31,4 +30,3 @@ abstract class PercussionInstruments {
         this.name = name;
     }
 }
-

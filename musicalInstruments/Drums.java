@@ -15,6 +15,7 @@ public class Drums extends PercussionInstruments{
         System.out.println("This drums name - " + this.getName() + ". Playing " + drumsBit.getMelody()
                 + ". Material - " + this.getMaterial());
     }
+
     @Override
     public void description() {
         System.out.println("You can play: " + drumsBit.getMelody());

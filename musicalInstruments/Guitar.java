@@ -3,11 +3,11 @@ package musicalInstruments;
 import melody.Melody;
 
 public class Guitar extends StringedInstruments {
-    private Melody guitarMelody = new Melody("Brenk-brenk"); // Инкапусляция
+    private Melody guitarMelody = new Melody("Brenk-brenk");
 
     public Guitar (String name){
         super(name);
-    } //Наследование
+    }
 
     @Override
     public void information(String name, Melody melody) {  // Полиморфизм
@@ -15,7 +15,8 @@ public class Guitar extends StringedInstruments {
         setNumberOfStrings(5);
         System.out.println("This guitar name - " + name + ". Playing " + guitarMelody.getMelody()
                 + " by " + getNumberOfStrings() + " strings." );
-    }
+    } // Polymorphism
+
     @Override
     public void description() {
         System.out.println("You can play: " + guitarMelody.getMelody());
